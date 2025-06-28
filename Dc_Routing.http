@@ -1,0 +1,6 @@
+@Dc_Routing_HostAddress = http://localhost:5240
+
+GET {{Dc_Routing_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
