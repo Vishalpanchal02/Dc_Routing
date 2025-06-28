@@ -1,0 +1,15 @@
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\bin\Debug\net8.0\Dc_Routing.Services.deps.json
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\bin\Debug\net8.0\Dc_Routing.Services.dll
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\bin\Debug\net8.0\Dc_Routing.Services.pdb
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\bin\Debug\net8.0\Dc_Routing.Data.dll
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\bin\Debug\net8.0\Dc_Routing.Data.pdb
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.csproj.AssemblyReference.cache
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.AssemblyInfoInputs.cache
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.AssemblyInfo.cs
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routi.A04F9EE4.Up2Date
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.dll
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\refint\Dc_Routing.Services.dll
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\Dc_Routing.Services.pdb
+C:\Users\hp\source\Dc_Routing\Dc_Routing.Services\obj\Debug\net8.0\ref\Dc_Routing.Services.dll
