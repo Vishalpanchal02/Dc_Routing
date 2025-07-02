@@ -1,30 +1,35 @@
-using Dc_Routing.Services.IRepositories;
+﻿using Dc_Routing.Services.IRepositories;
 using Dc_Routing.Services.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Dc_Routing.Data.EFModels;
-//using Dc_Routing.UnityWork; // <-- Your namespace for HRMS2Context
+using OfficeOpenXml;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register DbContext with Connection String
+// ✅ Set EPPlus license globally (non-commercial use)
+
+
+// ✅ Register DbContext
 builder.Services.AddDbContext<HRMS2Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-// Register Repositories
+// ✅ Register Repositories and Unit of Work
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-// Add Controllers and Swagger
+// ✅ Add Controllers and Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Middleware pipeline
+// ✅ Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -34,4 +39,5 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
 app.Run();

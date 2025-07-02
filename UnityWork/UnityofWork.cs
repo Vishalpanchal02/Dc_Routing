@@ -32,16 +32,30 @@ namespace Dc_Routing.Services.Repositories
             return await EmployeeRepository.GetAllEmployeesAsync();
         }
 
-        public async Task<Employee> LoginAsync(string ecode, string password)
+        public async Task<TblDcemployee> LoginAsync(string ecode, string password)
         {
             return await EmployeeRepository.LoginAsync(ecode, password);
         }
 
-        public async Task<bool> UpdateEmployeeAsync(Employee employee)
+        //public async Task<bool> UpdateEmployeeAsync(TblDcemployee employee)
+        //{
+        //    return await EmployeeRepository.UpdateEmployeeAsync(employee);
+        //}
+
+        public async Task<int> AddBulkEmployeesAsync(List<TblDcemployee> employees)
         {
-            return await EmployeeRepository.UpdateEmployeeAsync(employee);
+            return await EmployeeRepository.AddBulkEmployeesAsync(employees);
         }
 
+        //public Task<bool> UpdateEmployeeAsync(TblDcemployee employee)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
     }
 }
 
