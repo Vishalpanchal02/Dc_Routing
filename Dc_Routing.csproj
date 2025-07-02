@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dc_Routing.Data\**" />
+    <Compile Remove="Dc_Routing.Services\**" />
+    <Content Remove="Dc_Routing.Data\**" />
+    <Content Remove="Dc_Routing.Services\**" />
+    <EmbeddedResource Remove="Dc_Routing.Data\**" />
+    <EmbeddedResource Remove="Dc_Routing.Services\**" />
+    <None Remove="Dc_Routing.Data\**" />
+    <None Remove="Dc_Routing.Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EPPlus" Version="4.5.3.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
       <PrivateAssets>all</PrivateAssets>
@@ -16,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dc_Routing.Services\Dc_Routing.Services.csproj" />
+    <ProjectReference Include="Dc_Routing.Services\Dc_Routing.Services.csproj" />
   </ItemGroup>
 
 </Project>
